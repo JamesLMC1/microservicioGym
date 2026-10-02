@@ -11,6 +11,14 @@ const options = {
     },
     servers: [
       {
+        url: '/',
+        description: 'Servidor actual (usa el host desde el que se abre Swagger)',
+      },
+      {
+        url: 'https://microserviciogym.onrender.com',
+        description: 'Node - Render (producción)',
+      },
+      {
         url: `http://localhost:${process.env.PORT || 3000}`,
         description: 'Servidor local',
       },
